@@ -88,7 +88,32 @@ body .container .component .card .inner-card button:hover {
     height: 100vh;
   }
   .container .component {
-    width: 75%;
+    width: 85%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    border-radius: 0.5rem !important;
+  }
+  .container .component .card .inner-card button {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container .component {
+    width: 50%;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;

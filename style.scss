@@ -81,6 +81,7 @@ body {
   }
 }
 
+// Tab View
 @media screen and (min-width: 750px) {
   .container {
     display: flex;
@@ -88,7 +89,29 @@ body {
     align-items: center;
     height: 100vh;
     .component {
-      width: 75%;
+      width: 85%;
+      display: flex !important;
+      border-radius: 0.5rem !important;
+      .card {
+        .inner-card {
+          button {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop View
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .component {
+      width: 50%;
       display: flex !important;
       border-radius: 0.5rem !important;
       .card {
