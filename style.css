@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap");
+.bg-orange {
+  background-color: #e38826;
+}
+
+.bg-cyan {
+  background-color: #006970;
+}
+
+.bg-dark-cyan {
+  background-color: #004241;
+}
+
+.color-orange {
+  color: #e38826;
+}
+
+.color-cyan {
+  color: #006970;
+}
+
+.color-dark-cyan {
+  color: #004241;
+}
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container {
+  padding: 2rem;
+}
+
+body .container .component {
+  display: block;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+body .container .component .card {
+  padding: 2.75rem;
+}
+
+body .container .component .card .inner-card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+body .container .component .card .inner-card p {
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+body .container .component .card .inner-card button {
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  border: none;
+}
+
+body .container .component .card .inner-card button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  margin: calc(1rem - 1px) 0;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container .component {
+    width: 75%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    border-radius: 0.5rem !important;
+  }
+  .container .component .card .inner-card p {
+    margin-bottom: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

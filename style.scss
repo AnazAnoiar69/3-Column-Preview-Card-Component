@@ -1,0 +1,103 @@
+//Font
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap");
+$primary-font: "Lexend Deca", sans-serif;
+$secondary-font: "Big Shoulders Display", cursive;
+
+// Color
+
+$color-orange: hsl(31, 77%, 52%);
+$color-cyan: hsl(184, 100%, 22%);
+$color-dark-cyan: hsl(179, 100%, 13%);
+
+// Accessibility
+.bg-orange {
+  background-color: $color-orange;
+}
+.bg-cyan {
+  background-color: $color-cyan;
+}
+.bg-dark-cyan {
+  background-color: $color-dark-cyan;
+}
+.color-orange {
+  color: $color-orange;
+}
+.color-cyan {
+  color: $color-cyan;
+}
+.color-dark-cyan {
+  color: $color-dark-cyan;
+}
+
+// Style
+
+* {
+  font-family: $primary-font;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  .container {
+    padding: 2rem;
+    .component {
+      display: block;
+      border-radius: 1rem;
+      overflow: hidden;
+      .card {
+        padding: 2.75rem;
+        .inner-card {
+          h1 {
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            padding: 2rem 0;
+          }
+          p {
+            font-weight: 300;
+            line-height: 1.8;
+            font-size: 15px;
+          }
+          button {
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            background-color: white;
+            border-radius: 2rem;
+            border: none;
+
+            &:hover {
+              background-color: transparent;
+              border: 1px solid white;
+              margin: calc(1rem - 1px) 0;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .component {
+      width: 75%;
+      display: flex !important;
+      border-radius: 0.5rem !important;
+      .card {
+        .inner-card {
+          p {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
